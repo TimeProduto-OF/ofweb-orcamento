@@ -168,10 +168,8 @@
       display: flex; align-items: center; gap: 16px; padding: 8px;
     }
     .sofia-logo {
-      width: 42px; height: 32px; background: rgba(8,102,198,0.15);
-      border-radius: 6px; display: flex; align-items: center;
-      justify-content: center; font-size: 9px; font-weight: 700;
-      color: #0866c6; letter-spacing: 1px; flex-shrink: 0;
+      width: 42px; height: 32px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
     }
     .sofia-text { flex: 1; }
     .sofia-text strong { display: block; font-size: 14px; font-weight: 500; color: #222; }
@@ -399,7 +397,11 @@
             <h3>Pesquisar substituto</h3>
             <div class="sofia-card active" id="sofiaCard" onclick="toggleSofia()">
               <div class="sofia-inner">
-                <div class="sofia-logo">SOFIA</div>
+                <div class="sofia-logo">
+                  <svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.1748 29.3711V32L0.000976562 26.8535V24.168L5.1748 29.3711ZM34.3076 8.05566V31.999H32.2744L32.1611 8.72754L25.4404 2.07031H16.0654L9.3457 8.72754V31.999H7.3125V7.94434L15.2754 0H26.1748L34.3076 8.05566ZM13.3877 27.2998V31.999H11.3633V25.2861L13.3877 27.2998ZM30.2578 31.999H28.2334V27.2998L30.2578 25.2861V31.999ZM30.9326 12.7539V22.041L25.5039 27.4111V31.998H23.4678V28.082H18.1514V31.998H16.1162V27.4111L10.6865 22.041V12.7539L12.7227 10.7402V21.3691L17.4727 26.0684H24.1465L28.9082 21.3691V10.7402L30.9326 12.7539ZM41.6172 26.7959L36.4434 31.998V29.3125L41.6172 24.166V26.7959ZM22.1172 23.3838H19.5039L17.457 21.3701H24.1641L22.1172 23.3838ZM5.17383 17.4541L0 22.6006V19.9717L5.17383 14.7686V17.4541ZM41.6162 19.9131V22.5986L36.4424 17.3955V14.7666L41.6162 19.9131ZM18.1396 17.4531H15.4121V12.082H18.1396V17.4531ZM26.2119 17.4521H23.4834V12.082H26.2119V17.4521ZM23.5088 5.37012L28.9082 10.7402H26.208L20.8096 5.37012L15.4121 10.7402H12.7119L18.1113 5.37012H23.5088Z" fill="#005FE8"/>
+                  </svg>
+                </div>
                 <div class="sofia-text">
                   <strong>Sugestões da SOFIA</strong>
                   <span>Legenda</span>
