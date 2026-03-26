@@ -1,0 +1,72 @@
+/* Design tokens */
+:root {
+  /* Colors */
+  --color-neutral-900: #222222;
+  --color-neutral-400: #808080;
+  --color-neutral-300: #999999;
+  --color-neutral-100: #d9d9d9;
+  --color-neutral-50: #f4f4f4;
+  --color-neutral-25: #ffffff;
+
+  --color-primary: #0866c6;
+  --color-primary-dark: #053d77;
+  --color-primary-light: #cee0f4;
+  --color-primary-lightest: rgba(8, 102, 198, 0.1);
+
+  --color-success: #10b981;
+
+  --color-border-neutral: #d9d9d9;
+
+  /* Typography */
+  --font-family: 'Roboto', sans-serif;
+
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-32: 32px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Spacing */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border radius */
+  --radius-4: 4px;
+  --radius-8: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-14);
+  color: var(--color-neutral-900);
+  background-color: #d9d9d9;
+  line-height: normal;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
