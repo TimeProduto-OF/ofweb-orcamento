@@ -1,162 +1,196 @@
 /* =============================================================
    ORCA Design System — Design Tokens
    Fonte única de verdade: sincronizado com Figma (ORCA - Design System OrçaFascio)
-   Cada variável tem o nome do token Figma comentado ao lado.
+   Cada variável tem o nome do token Tokens Studio comentado ao lado.
+   Ao ver um token no Figma, basta procurar o comentário para saber a variável CSS.
    ============================================================= */
 
 :root {
 
   /* -----------------------------------------------------------
-     CORES — Grayscale
-     Figma: grayscale/*
+     CORES — Neutros / Grayscale
+     Tokens Studio: orca.scheme.function.neutral.*
+                    orca.bg.neutral.* / orca.fg.neutral.*
   ----------------------------------------------------------- */
-  --color-neutral-900: #222222;   /* grayscale/900 */
-  --color-neutral-800: #282828;   /* grayscale/800 */
-  --color-neutral-700: #353535;   /* grayscale/700 */
-  --color-neutral-600: #474747;   /* grayscale/600 */
-  --color-neutral-500: #606060;   /* grayscale/500 */
-  --color-neutral-400: #808080;   /* grayscale/400 */
-  --color-neutral-300: #999999;   /* grayscale/300 */
-  --color-neutral-200: #afafaf;   /* grayscale/200 */
-  --color-neutral-100: #d9d9d9;   /* grayscale/100 */
-  --color-neutral-50:  #f4f4f4;   /* grayscale/50  */
-  --color-neutral-25:  #ffffff;   /* contrast/light */
+  --color-neutral-900: #222222;   /* orca.scheme.function.neutral.900 */
+  --color-neutral-800: #282828;   /* orca.scheme.function.neutral.800 */
+  --color-neutral-700: #353535;   /* orca.scheme.function.neutral.700 */
+  --color-neutral-600: #474747;   /* orca.scheme.function.neutral.600 */
+  --color-neutral-500: #606060;   /* orca.scheme.function.neutral.500 */
+  --color-neutral-400: #808080;   /* orca.scheme.function.neutral.400 */
+  --color-neutral-300: #999999;   /* orca.scheme.function.neutral.300 */
+  --color-neutral-200: #afafaf;   /* orca.scheme.function.neutral.200 */
+  --color-neutral-100: #d9d9d9;   /* orca.scheme.function.neutral.100 */
+  --color-neutral-50:  #f4f4f4;   /* orca.scheme.function.neutral.50  */
+  --color-neutral-25:  #ffffff;   /* orca.scheme.function.neutral.25  */
 
   /* -----------------------------------------------------------
      CORES — Primária (azul)
-     Figma: primary/tint/*, primary/shade/*
+     Tokens Studio: orca.scheme.function.primary
+                    orca.bg.primary.* / orca.fg.primary.*
   ----------------------------------------------------------- */
-  --color-primary:          #0866c6;  /* function/primary = primary/tint/900 */
-  --color-primary-tint-800: #2175cc;  /* primary/tint/800 */
-  --color-primary-tint-700: #3985d1;  /* primary/tint/700 */
-  --color-primary-tint-600: #5294d7;  /* primary/tint/600 */
-  --color-primary-tint-500: #6ba3dd;  /* primary/tint/500 */
-  --color-primary-tint-400: #83b2e3;  /* primary/tint/400 */
-  --color-primary-tint-300: #9cc2e8;  /* primary/tint/300 */
-  --color-primary-tint-200: #b5d1ee;  /* primary/tint/200 */
-  --color-primary-light:    #cee0f4;  /* primary/tint/100 */
-  --color-primary-tint-50:  #e6f0f9;  /* primary/tint/50  */
-  --color-primary-dark:     #004dac;  /* primary/shade/800 */
+  --color-primary:          #0866c6;  /* orca.scheme.function.primary           */
+  --color-primary-tint-800: #2175cc;  /* orca.bg.primary.hard   (primary/tint/800) */
+  --color-primary-tint-700: #3985d1;  /* orca.bg.primary.strong (primary/tint/700) */
+  --color-primary-tint-600: #5294d7;  /* orca.bg.primary.dark   (primary/tint/600) */
+  --color-primary-tint-500: #6ba3dd;  /* orca.bg.primary.darkest                   */
+  --color-primary-tint-400: #83b2e3;  /* orca.bg.primary.soft                      */
+  --color-primary-tint-300: #9cc2e8;  /* orca.bg.primary.weak                      */
+  --color-primary-tint-200: #b5d1ee;  /* orca.bg.primary.light                     */
+  --color-primary-light:    #cee0f4;  /* orca.bg.primary.lightest (primary/tint/100) */
+  --color-primary-tint-50:  #e6f0f9;  /* orca.bg.primary.lightest variant           */
+  --color-primary-dark:     #004dac;  /* orca.bg.primary.hard shade (primary/shade/800) */
   --color-primary-shade-700:#003393;  /* primary/shade/700 */
   --color-primary-shade-600:#001a7a;  /* primary/shade/600 */
 
   /* -----------------------------------------------------------
-     CORES — Secundária (laranja) e Terciária (roxo)
-     Figma: function/secondary, function/tertiary
+     CORES — Secundária (laranja)
+     Tokens Studio: orca.scheme.function.secondary
+                    orca.bg.secondary.* / orca.fg.secondary.*
   ----------------------------------------------------------- */
-  --color-secondary:          #e55a15;  /* function/secondary = secondary/tint/900 */
-  --color-secondary-light:    #faded0;  /* secondary/tint/100 */
-  --color-secondary-lightest: #fceee8;  /* secondary/tint/50  */
-  --color-tertiary:           #6b16b7;  /* function/tertiary = tertiary/tint/900 */
-  --color-tertiary-light:     #e1d0f1;  /* tertiary/tint/100  */
+  --color-secondary:          #e55a15;  /* orca.scheme.function.secondary */
+  --color-secondary-light:    #faded0;  /* orca.bg.secondary.light        */
+  --color-secondary-lightest: #fceee8;  /* orca.bg.secondary.lightest     */
+
+  /* -----------------------------------------------------------
+     CORES — Terciária (roxo)
+     Tokens Studio: orca.scheme.function.tertiary
+                    orca.bg.tertiary.* / orca.fg.tertiary.*
+  ----------------------------------------------------------- */
+  --color-tertiary:       #6b16b7;  /* orca.scheme.function.tertiary */
+  --color-tertiary-light: #e1d0f1;  /* orca.bg.tertiary.light        */
 
   /* -----------------------------------------------------------
      CORES — Feedback (status do sistema)
-     Figma: feedback/*
+     Tokens Studio: orca.scheme.feedback.*
+                    orca.bg.info.* / orca.bg.success.* / orca.bg.warning.* / orca.bg.danger.*
   ----------------------------------------------------------- */
-  --color-success:          #10b981;  /* feedback/success          */
-  --color-success-light:    #53cda5;  /* feedback/success/light    */
-  --color-success-lightest: #cff1e6;  /* success/lightest          */
-  --color-warning:          #ffb829;  /* feedback/warning          */
-  --color-warning-light:    #ffcc66;  /* feedback/warning/light    */
-  --color-warning-lightest: #fff1d4;  /* warning/lightest          */
-  --color-error:            #e3173b;  /* feedback/error            */
-  --color-error-light:      #eb5973;  /* feedback/error/light      */
-  --color-error-lightest:   #f1c8cf;  /* error/lightest            */
-  --color-info:             #0866c6;  /* feedback/info (= primary) */
-  --color-info-light:       #3985d1;  /* feedback/info/light       */
-  --color-info-lightest:    #8bb7e4;  /* feedback/info/lightest    */
+  --color-success:          #10b981;  /* orca.scheme.feedback.success  / orca.fg.success.absolute */
+  --color-success-light:    #53cda5;  /* orca.bg.success.light                                    */
+  --color-success-lightest: #cff1e6;  /* orca.bg.success.lightest                                 */
+  --color-warning:          #ffb829;  /* orca.scheme.feedback.warning  / orca.fg.warning.absolute */
+  --color-warning-light:    #ffcc66;  /* orca.bg.warning.light                                    */
+  --color-warning-lightest: #fff1d4;  /* orca.bg.warning.lightest                                 */
+  --color-error:            #e3173b;  /* orca.scheme.feedback.danger   / orca.fg.danger.absolute  */
+  --color-error-light:      #eb5973;  /* orca.bg.danger.light                                     */
+  --color-error-lightest:   #f1c8cf;  /* orca.bg.danger.lightest                                  */
+  --color-info:             #0866c6;  /* orca.scheme.feedback.info (= primary)                    */
+  --color-info-light:       #3985d1;  /* orca.bg.info.light                                       */
+  --color-info-lightest:    #8bb7e4;  /* orca.bg.info.lightest                                    */
 
   /* -----------------------------------------------------------
      CORES — Borda
+     Tokens Studio: orca.border.neutral.*
   ----------------------------------------------------------- */
-  --color-border-neutral: #d9d9d9;   /* grayscale/100 */
-  --color-border-focus:   #0866c6;   /* function/primary */
+  --color-border-neutral: #d9d9d9;  /* orca.border.neutral.100 */
+  --color-border-focus:   #0866c6;  /* orca.border.primary.absolute.focus */
 
   /* -----------------------------------------------------------
      TIPOGRAFIA — Famílias
-     Figma: font/software, font/marketing
+     Tokens Studio: orca.font-family.software / orca.font-family.marketing
   ----------------------------------------------------------- */
-  --font-family:           'Roboto', sans-serif;      /* font/software   */
-  --font-family-marketing: 'Pathway Extreme', serif;  /* font/marketing  */
+  --font-family:           'Roboto', sans-serif;     /* orca.font-family.software   */
+  --font-family-marketing: 'Pathway Extreme', serif; /* orca.font-family.marketing  */
 
   /* -----------------------------------------------------------
      TIPOGRAFIA — Tamanhos
-     Figma: font/size/*
+     Tokens Studio: orca.font-size.*
   ----------------------------------------------------------- */
-  --font-size-10: 10px;   /* font/size/mc   */
-  --font-size-12: 12px;   /* font/size/xs   */
-  --font-size-14: 14px;   /* font/size/sm   */
-  --font-size-16: 16px;   /* font/size/md   */
-  --font-size-20: 20px;   /* font/size/lg   */
-  --font-size-24: 24px;   /* font/size/xl   */
-  --font-size-32: 32px;   /* font/size/xxl  */
-  --font-size-48: 48px;   /* font/size/xxxl */
-  --font-size-64: 64px;   /* font/size/g    */
+  --font-size-10: 10px;  /* orca.font-size.xs2  */
+  --font-size-12: 12px;  /* orca.font-size.xs   */
+  --font-size-14: 14px;  /* orca.font-size.sm   */
+  --font-size-16: 16px;  /* orca.font-size.md   */
+  --font-size-20: 20px;  /* orca.font-size.lg   */
+  --font-size-24: 24px;  /* orca.font-size.xl   */
+  --font-size-32: 32px;  /* orca.font-size.xl2  */
+  --font-size-48: 48px;  /* orca.font-size.xl3  */
+  --font-size-64: 64px;  /* orca.font-size.g    */
 
   /* -----------------------------------------------------------
      TIPOGRAFIA — Pesos
-     Figma: font/weight/*
+     Tokens Studio: orca.font-weight.*
   ----------------------------------------------------------- */
-  --font-weight-light:    300;  /* font/weight/300 */
-  --font-weight-regular:  400;  /* font/weight/400 */
-  --font-weight-medium:   500;  /* font/weight/500 */
-  --font-weight-semibold: 600;  /* font/weight/600 */
-  --font-weight-bold:     700;  /* font/weight/700 */
+  --font-weight-light:    300;  /* orca.font-weight.heading-light    */
+  --font-weight-regular:  400;  /* orca.font-weight.body-regular     */
+  --font-weight-medium:   500;  /* orca.font-weight.heading-medium   */
+  --font-weight-semibold: 600;  /* orca.font-weight.heading-semibold */
+  --font-weight-bold:     700;  /* orca.font-weight.display-bold     */
 
   /* -----------------------------------------------------------
      TIPOGRAFIA — Line Height
-     Figma: line/height/*
+     Tokens Studio: orca.line-height (via Themes typography)
   ----------------------------------------------------------- */
-  --line-height-small:  14px;  /* line/height/small  */
-  --line-height-medium: 16px;  /* line/height/medium */
-  --line-height-tall:   20px;  /* line/height/tall   */
-  --line-height-taller: 22px;  /* line/height/taller */
+  --line-height-small:  14px;  /* orca.typography.caption.1  */
+  --line-height-medium: 16px;  /* orca.typography.body.2     */
+  --line-height-tall:   20px;  /* orca.typography.body.1     */
+  --line-height-taller: 22px;  /* orca.typography.subtitle.* */
 
   /* -----------------------------------------------------------
      TIPOGRAFIA — Letter Spacing
-     Figma: letter/spacing/*
   ----------------------------------------------------------- */
-  --letter-spacing-none:  0px;     /* letter/spacing/none  */
-  --letter-spacing-small: 0.3px;   /* letter/spacing/small */
+  --letter-spacing-none:  0px;    /* orca.font-size.* padrão */
+  --letter-spacing-small: 0.3px;  /* orca.overline           */
 
   /* -----------------------------------------------------------
-     ESPAÇAMENTO
-     Figma: spacing/*
+     ESPAÇAMENTO — Padding / Margin / Gap
+     Tokens Studio: orca.padding.* / orca.margin.* / orca.gap.*
+     Base: orca.dimension.*
   ----------------------------------------------------------- */
-  --space-2:  2px;   /* spacing/1  */
-  --space-4:  4px;   /* spacing/2  */
-  --space-8:  8px;   /* spacing/3  */
-  --space-12: 12px;  /* spacing/4  */
-  --space-16: 16px;  /* spacing/5  */
-  --space-20: 20px;  /* spacing/6  */
-  --space-24: 24px;  /* spacing/7  */
-  --space-32: 32px;  /* spacing/8  */
-  --space-40: 40px;  /* spacing/9  */
-  --space-48: 48px;  /* spacing/10 */
-  --space-64: 64px;  /* spacing/11 */
-  --space-80: 80px;  /* spacing/12 */
+  --space-0:  0px;   /* orca.padding.none  = orca.dimension.0  */
+  --space-2:  2px;   /* orca.padding.xs5   = orca.dimension.1  */
+  --space-4:  4px;   /* orca.padding.xs4   = orca.dimension.2  */
+  --space-8:  8px;   /* orca.padding.xs3   = orca.dimension.3  */
+  --space-12: 12px;  /* orca.padding.xs2   = orca.dimension.4  */
+  --space-16: 16px;  /* orca.padding.xs    = orca.dimension.5  */
+  --space-24: 24px;  /* orca.padding.sm    = orca.dimension.7  */
+  --space-32: 32px;  /* orca.padding.md    = orca.dimension.9  */
+  --space-40: 40px;  /* orca.padding.lg    = orca.dimension.11 */
+  --space-48: 48px;  /* orca.padding.xl    = orca.dimension.13 */
+  --space-64: 64px;  /* orca.padding.xl3   = orca.dimension.15 */
+  --space-80: 80px;  /* orca.padding.xl5   = orca.dimension.17 */
+  --space-96: 96px;  /* orca.padding.g     = orca.dimension.19 */
 
   /* -----------------------------------------------------------
      BORDA — Raio (border-radius)
-     Figma: border-radius/*
+     Tokens Studio: orca.border-radius.*
   ----------------------------------------------------------- */
-  --radius-0:    0px;     /* border-radius/square  */
-  --radius-2:    2px;     /* border-radius/softly  */
-  --radius-4:    4px;     /* border-radius/base    */
-  --radius-8:    8px;     /* border-radius/chubby  */
-  --radius-16:   16px;    /* border-radius/rounded */
-  --radius-pill: 1000px;  /* border-radius/pill    */
+  --radius-0:    0px;     /* orca.border-radius.square  = orca.dimension.0 */
+  --radius-2:    2px;     /* orca.border-radius.softly  = orca.dimension.1 */
+  --radius-4:    4px;     /* orca.border-radius.base    = orca.dimension.2 */
+  --radius-8:    8px;     /* orca.border-radius.chubby  = orca.dimension.3 */
+  --radius-16:   16px;    /* orca.border-radius.rounded = orca.dimension.5 */
+  --radius-pill: 1000px;  /* orca.border-radius.pill                       */
 
   /* -----------------------------------------------------------
      BORDA — Espessura (border-width)
-     Figma: border-width/*
+     Tokens Studio: orca.border-width.*
   ----------------------------------------------------------- */
-  --border-width-none:   0px;  /* border-width/none   */
-  --border-width-thin:   1px;  /* border-width/thin   */
-  --border-width-skinny: 2px;  /* border-width/skinny */
-  --border-width-medium: 4px;  /* border-width/medium */
-  --border-width-thick:  8px;  /* border-width/thick  */
+  --border-width-none:   0px;  /* orca.border-width.none   = orca.dimension.0 */
+  --border-width-thin:   1px;  /* orca.border-width.thin                      */
+  --border-width-skinny: 2px;  /* orca.border-width.skinny = orca.dimension.1 */
+  --border-width-medium: 4px;  /* orca.border-width.medium = orca.dimension.2 */
+  --border-width-thick:  8px;  /* orca.border-width.thick  = orca.dimension.3 */
+
+  /* -----------------------------------------------------------
+     OPACIDADE
+     Tokens Studio: orca.opacity.*
+  ----------------------------------------------------------- */
+  --opacity-disabled: 0.4;  /* orca.opacity.sm       */
+  --opacity-hover:    0.25; /* orca.state.mod.hover  */
+  --opacity-active:   0.2;  /* orca.state.mod.active */
+
+  /* -----------------------------------------------------------
+     Z-INDEX
+     Tokens Studio: orca.z-index.*
+  ----------------------------------------------------------- */
+  --z-index-below:   -999;  /* orca.z-index.0 */
+  --z-index-base:       1;  /* orca.z-index.1 */
+  --z-index-dropdown: 200;  /* orca.z-index.2 */
+  --z-index-sticky:   300;  /* orca.z-index.3 */
+  --z-index-overlay:  400;  /* orca.z-index.4 */
+  --z-index-modal:    500;  /* orca.z-index.5 */
+  --z-index-toast:    600;  /* orca.z-index.6 */
+  --z-index-tooltip:  700;  /* orca.z-index.7 */
 }
 
 /* =============================================================
